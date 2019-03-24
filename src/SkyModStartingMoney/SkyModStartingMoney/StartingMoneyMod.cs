@@ -9,7 +9,7 @@
     {
         public string Description
         {
-            get { return "Gives you $500,000 starting cash on new cities."; }
+            get { return "Gives you $1,000,000 starting cash on new cities."; }
         }
 
         public string Name
@@ -29,7 +29,7 @@
                     var type = typeof(EconomyManager);
                     var cashAmountField = type.GetField("m_cashAmount", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
 
-                    cashAmountField.SetValue(EconomyManager.instance, 50000000);
+                    cashAmountField.SetValue(EconomyManager.instance, 40000000);
                 }
                 catch (Exception ex)
                 {
